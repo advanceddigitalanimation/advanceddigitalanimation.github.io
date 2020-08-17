@@ -67,6 +67,21 @@
         <!-- /.container -->
     </nav>
 
+    <div class="modal fade" id="interestForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header" style="text-align:center;">🎉<br>[2020-2021]<br>Interested in taking CNM 190 this year? </h2>
+                <div class="modal-body">
+                    <p>To learn about how to apply, please attend the first class: Wednesday August 26, 1:00PM-3:00PM. To get the zoom link for this class, please enroll in NM190 on CalCentral and fill out the interest form below. Don’t worry if you are on the waitlist! All prospective students will receive the zoom link to the first class. Additionally, you will need to prepare a personal portfolio of any relevant work to submit with the application, which can be sent in after the first class.
+                    </p>
+                    <div style="text-align:center;">
+                        <a href="https://forms.gle/9LY7TA2iKsWqFXQe7" class="btn btn-default" style="background-color:skyblue;">Interest Form</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide" style="height:75%">
         <!-- Indicators -->
@@ -152,14 +167,6 @@
             <div class="col-md-12">
                 <p>The final grade will be based upon weekly homework assignments, participation in critiques, and confidential peer evaluation (each contributing to 1/3 of the grade). In addition, the final group deliverable can bump everyone in the group up or down a +/- level. Feedback (including current grades) will be provided mid-semester.
                 </p>
-            </div>
-			<div class="col-lg-12">
-                <h2 class="page-header">[2020-2021] Interested in taking CNM 190 this year?</h2>
-            </div>
-            <div class="col-md-12">
-                <p>To learn about how to apply, please attend the first class: Wednesday August 26, 1:00PM-3:00PM. To get the zoom link for this class, please enroll in NM190 on CalCentral and fill out the interest form below. Don’t worry if you are on the waitlist! All prospective students will receive the zoom link to the first class. Additionally, you will need to prepare a personal portfolio of any relevant work to submit with the application, which can be sent in after the first class.
-                </p>
-                <a href="https://forms.gle/9LY7TA2iKsWqFXQe7" class="btn btn-default">Interest Form</a>
             </div>
         </div>
         <!-- /.row -->
@@ -289,6 +296,12 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#interestForm').modal('show');
+    });
     </script>
 
 </body>
