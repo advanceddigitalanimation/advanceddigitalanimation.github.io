@@ -99,7 +99,7 @@
     </div>
 
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide" style="position: fixed; z-index: -100; width: 100%;">
+    <header id="myCarousel" class="carousel slide" style="position: fixed; z-index: 0; width: 100%;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -108,6 +108,8 @@
             <li data-target="#myCarousel" data-slide-to="3"></li>
 			<li data-target="#myCarousel" data-slide-to="4"></li>
 			<li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+			<li data-target="#myCarousel" data-slide-to="7"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -148,7 +150,18 @@
                     <h2>"Stargazing"</h2>
                 </div>
             </div>
-
+            <div class="item">
+                <div class="fill" style="background-image:url('media/nightmarket-cropped.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>"Night Market"</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('media/sculpted-cropped.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>"Sculpted"</h2>
+                </div>
+            </div>
         </div>
 
         <!-- Controls -->
@@ -159,8 +172,8 @@
             <span class="icon-next"></span>
         </a>
     </header>
-    <div style="height:51%; z-index:1;"></div>
-    <div style="width:100%; background-color:white; overflow: hidden;">
+    <div style="height:51%; z-index:1; pointer-events: none;"></div>
+    <div style="width:100%; position:relative; background-color:white; overflow: hidden;">
 
     <!-- Page Content -->
     <div class="container" style="z-index:1; background-color:white; overflow:hidden;">
