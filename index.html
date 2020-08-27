@@ -70,7 +70,10 @@
     <div class="modal fade" id="interestForm">
         <div class="modal-dialog">
             <div class="modal-content">
-                <h2 class="modal-header" style="text-align:center; background-color: skyblue;">🚀<br>2020-2021<br>Apply for CNM190! </h2>
+                <h2 class="modal-header" style="text-align:center; background-color: skyblue; margin-top:0px; border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                    <span class="close" id="interestFormClose">&times;</span>
+                    🚀<br>2020-2021<br>Apply for CNM190! 
+                </h2>
                 <div class="modal-body">
                     <p>Hello everyone!
                         <br><br>
@@ -410,6 +413,9 @@
     <script type="text/javascript">
     $(document).ready(function(){
         $('#interestForm').modal('show');
+    });
+    $('#interestFormClose').on('click', function(){
+        $('#interestForm').modal('hide');
     });
     </script>
 
