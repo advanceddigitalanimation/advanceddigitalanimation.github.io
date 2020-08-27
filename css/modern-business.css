@@ -54,6 +54,10 @@ body {
     color: white;
 }
 
+.modal-body {
+    padding: 30px;
+}
+
 /* Home Page Carousel */
 
 header.carousel {
@@ -124,5 +128,9 @@ footer {
 
     header.carousel .carousel {
         height: 70%;
+    }
+
+    [data-aos-duration] {
+        transition: 0.4s !important;
     }
 }
