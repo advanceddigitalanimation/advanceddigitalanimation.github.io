@@ -24,7 +24,34 @@ body {
 }
 
 .row-gap{
-    margin-top:15px;
+    margin-top:12px;
+}
+
+.link-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
+    padding: 5px;
+}
+
+.link-grid > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.panel {
+    transition: all .2s ease-in-out;
+}
+
+.panel:hover {
+    position: relative;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel:hover > .panel-heading {
+    background-image: linear-gradient(144deg, rgba(186,10,185,1) 0%, rgba(37,65,149,1) 100%); 
+    color: white;
 }
 
 /* Home Page Carousel */
@@ -87,6 +114,10 @@ footer {
 }
 
 @media(max-width:767px) {
+    .row-gap {
+        margin-top: 0;
+    }
+
     .img-portfolio {
         margin-bottom: 15px;
     }
