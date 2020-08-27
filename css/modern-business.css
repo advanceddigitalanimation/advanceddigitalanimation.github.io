@@ -23,6 +23,10 @@ body {
     opacity: 0.8;
 }
 
+.row-gap{
+    margin-top:15px;
+}
+
 /* Home Page Carousel */
 
 header.carousel {

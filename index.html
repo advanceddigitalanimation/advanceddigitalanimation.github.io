@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -21,6 +22,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -97,7 +99,7 @@
     </div>
 
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide" style="height:75%">
+    <header id="myCarousel" class="carousel slide" style="position: fixed; z-index: -100; width: 100%;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -157,164 +159,197 @@
             <span class="icon-next"></span>
         </a>
     </header>
+    <div style="height:51%; z-index:1;"></div>
+    <div style="width:100%; background-color:white; overflow: hidden;">
 
     <!-- Page Content -->
-    <div class="container">
-
+    <div class="container" style="z-index:1; background-color:white; overflow:hidden;">
+        <br>
         <!-- Marketing Icons Section -->
         <div class="row">
-            <div class="col-lg-12">
+            <!-- <div class="col-lg-12">
                 <h1 class="page-header">Class Resources</h1>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-time"></i> Past Projects</h4>
+            </div> -->
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-time"></i> Past Projects</h4>
+                            </div>
+                            <div class="panel-body">
+                                                <p>You can find a list of final shorts from past semesters here!</p>
+                                    <p>The most recent projects have their assets and resources publicly available for you to download and use as a reference.</p>
+                                    <a href="http://cnm190.com/pastprojects" class="btn btn-default">View Past Projects</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="panel-body">
-						                <p>You can find a list of final shorts from past semesters here!</p>
-                            <p>The most recent projects have their assets and resources publicly available for you to download and use as a reference.</p>
-                            <a href="http://cnm190.com/pastprojects" class="btn btn-default">View Past Projects</a>
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-calendar"></i> Calendar</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>In addition to regular lectures, labs, and office hours, we may have guest speakers from the film, game, or VFX industries.</p>
+                                <p>Everything will be posted on the class calendar here.</p>
+                                <a href="http://cnm190.com/calendar" class="btn btn-default">View Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 row-gap">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-info-sign"></i> About Our Class</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p> CNM 190: Advanced Digital Animation is a year-long course offered at UC Berkeley which is targeted at students with backgrounds in art, film, or computer science who intend to work in the visual effects, animation, and entertainment industries. </p>
+                                <p> It will build upon students' knowlege from related courses to guide them through the digital animation production process in an environment similar to industry production houses. We will survey many advanced topics and allow students to focus on a subset they find interesting while collaborating with their team to develop a 30-second animation piece.</p>
+                                <p> Our class will be held MWF 1:00PM-3:00PM PST via Zoom.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 row-gap">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-ok"></i> Grades</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>The final grades for CNM190 break down as follows:</p>
+                        <ul>
+                            <li>Weekly Homework Assignments: 25% </li>
+                            <li>Participation in Critiques: 25% </li>
+                            <li>Meeting Deadlines throughout the Semester: 25% </li>
+                            <li>Confidential Peer Evaluations: 25% </li>
+                        </ul>
+                        <p>In addition, the final group deliverable can bump everyone in the group up or down a +/- level. Feedback (including current grades) will be provided mid-semester.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 row-gap">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-pencil"></i> Staff</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p> You can contact the course staff at <a href="mailto:cnm190staff@lists.berkeley.edu">cnm190staff@lists.berkeley.edu</a> </p>
+                
+                                <b>Instructor</b>
+                                <ul>
+                                    <li><a href="https://people.eecs.berkeley.edu/~ddgarcia/">Dan Garcia</a></li>
+                                </ul>
+                                <b>Teaching Assistant</b>
+                                <ul>
+                                    <li>Akshata Nagendra</li>
+                                </ul>
+                                <b>Course Readers</b>
+                                <ul>
+                                    <li>Ashna Choudhury</li>
+                                    <li>Beverly Pan</li>
+                          <li>Ryan Ong</li>
+                          <li>Ali Yassin</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 row-gap">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-time"></i> Archives</h4>
+                            </div>
+                            <div class="panel-body">
+                                <!-- <ul> -->
+                                    <a href="http://cnm190.ghost.io" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2014-Spring 2015</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa12Sp13/index_sp.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2013</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa12Sp13/index_fa.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2012</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa10Sp11/index_sp.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2011</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa10Sp11/index_fa.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2010</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa08Sp09/index_sp.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2009</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa08Sp09/index_fa.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2008</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa06Sp07/" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2007</a><br>
+                                    <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa06Sp07/index_fall.html" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2006</a><br>
+                                <!-- </ul> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-calendar"></i> Calendar</h4>
+                <div class="row">
+                    <div class='col-sm-12'>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: skyblue;">
+                                <h4><i class="glyphicon glyphicon-comment"></i> Application Form</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Enrollment in CNM190 is based SOLELY on the application (i.e. being enrolled on CalCentral currently has no bearing on whether you are accepted in the course or not).
+                                <p>The application is due <b>TOMORROW, THURSDAY AUGUST 27TH at 12:00PM PDT</b></p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8-jBAiAnC_oi8yvJb1ynrJeBLHnuJUMH5Pr9CUURuxgDt1g/viewform" class="btn btn-default" style="background-color:skyblue;">Apply Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="panel-body">
-                        <p>In addition to regular lectures, labs, and office hours, we may have guest speakers from the film, game, or VFX industries.</p>
-                        <p>Everything will be posted on the class calendar here.</p>
-                        <a href="http://cnm190.com/calendar" class="btn btn-default">View Calendar</a>
+                </div>
+                <div class="row">
+                    <div class='col-sm-12 row-gap'>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-cd"></i> Required Software</h4>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><b>Maya</b> - free for Berkeley students</li>
+                                    <a href="https://www.autodesk.com/education/edu-software/overview?sorting=featured&page=1&filters=individual" class="btn btn-default">Download Maya</a>
+                                    </ul>
+                                    <ul>
+                                    <li><b>Renderman</b> - free for students</li>
+                                    <a href="http://renderman.pixar.com/intro" class="btn btn-default">Download Renderman</a>
+                                    </ul>
+                                    <ul>
+                                    <li><b>Adobe Suite</b> - free for Berkeley students</li>
+                                    <a href="https://software.berkeley.edu/adobe-creative-cloud" class="btn btn-default">Download Adobe Suite</a>
+                                    </ul>
+                                    <ul>
+                                    <li><b>Substance Painter</b> - free for students</li>
+                                    <a href="https://www.substance3d.com/education/" class="btn btn-default">Download Substance Painter</a>
+                                    </ul>
+                                    <ul>
+                                    <li>(optional) <b>zBrush</b> - free if using zBrush Core Mini</li>
+                                    <a href="https://zbrushcore.com/mini/download.php" class="btn btn-default">Download zBrush Core Mini</a>
+                                    </ul>
+                                    <ul>
+                                    <li>(optional) <b>Nuke</b> - 1 year free for students</li>
+                                    <a href="https://www.foundry.com/products/nuke/non-commercial" class="btn btn-default">Download Nuke</a>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 row-gap">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="glyphicon glyphicon-globe"></i> Related Websites</h4>
+                            </div>
+                            <div class="panel-body">
+                                <!-- <ul> -->
+                                    <!-- <li> -->
+                                        <img src="http://ucbugg.com/static/images/logo.svg" alt="UCBUGG logo" style="width:50px;height:50px;">
+                                        <p>
+                                            UCBUGG (UC Berkeley Undergraduate Graphics Group) is the student-taught class at UC Berkeley which serves as the unoffical prerequisite for this class.
+                                        </p>
+                                        <a href="http://ucbugg.com" target="_blank"> <i class="fa fa-chevron-right"></i>UCBUGG homepage</a>
+                                    <!-- </li> -->
+                                <!-- </ul> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading" style="background-color: skyblue;">
-                        <h4><i class="glyphicon glyphicon-comment"></i> Application Form</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Enrollment in CNM190 is based SOLELY on the application (i.e. being enrolled on CalCentral currently has no bearing on whether you are accepted in the course or not).
-                        <p>The application is due <b>TOMORROW, THURSDAY AUGUST 27TH at 12:00PM PDT</b></p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8-jBAiAnC_oi8yvJb1ynrJeBLHnuJUMH5Pr9CUURuxgDt1g/viewform" class="btn btn-default" style="background-color:skyblue;">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">About Our Class</h2>
-            </div>
-            <div class="col-md-6">
-                <p> CNM 190: Advanced Digital Animation is a year-long course offered at UC Berkeley which is targeted at students with backgrounds in art, film, or computer science who intend to work in the visual effects, animation, and entertainment industries. </p>
-                <p> It will build upon students' knowlege from related courses to guide them through the digital animation production process in an environment similar to industry production houses. We will survey many advanced topics and allow students to focus on a subset they find interesting while collaborating with their team to develop a 30-second animation piece.</p>
-                <p> Our class will be held MWF 1:00PM-3:00PM PST via Zoom.</p>
-                <p><b> Required Software: </b></p>
-                <ul>
-                  <li><b>Maya</b> - free for Berkeley students</li>
-                  <a href="https://www.autodesk.com/education/edu-software/overview?sorting=featured&page=1&filters=individual" class="btn btn-default">Download Maya</a>
-                </ul>
-                <ul>
-                  <li><b>Renderman</b> - free for students</li>
-                  <a href="http://renderman.pixar.com/intro" class="btn btn-default">Download Renderman</a>
-                </ul>
-                <ul>
-                  <li><b>Adobe Suite</b> - free for Berkeley students</li>
-                  <a href="https://software.berkeley.edu/adobe-creative-cloud" class="btn btn-default">Download Adobe Suite</a>
-                </ul>
-                <ul>
-                  <li><b>Substance Painter</b> - free for students</li>
-                  <a href="https://www.substance3d.com/education/" class="btn btn-default">Download Substance Painter</a>
-                </ul>
-                <ul>
-                  <li>(optional) <b>zBrush</b> - free if using zBrush Core Mini</li>
-                  <a href="https://zbrushcore.com/mini/download.php" class="btn btn-default">Download zBrush Core Mini</a>
-                </ul>
-                <ul>
-                  <li>(optional) <b>Nuke</b> - 1 year free for students</li>
-                  <a href="https://www.foundry.com/products/nuke/non-commercial" class="btn btn-default">Download Nuke</a>
-                </ul>
-            </div>
-            <div class="col-md-6">
-				<img class="img-responsive" src="media/octopus-thumbnail.jpg" alt="octopus-thumbnail">
-
-            </div>
-            <div class="col-lg-12">
-                <h2 class="page-header">Grades</h2>
-            </div>
-            <div class="col-md-12">
-                <p>The final grades for CNM190 break down as follows:</p>
-                <ul>
-                    <li>Weekly Homework Assignments: 25% </li>
-                    <li>Participation in Critiques: 25% </li>
-                    <li>Meeting Deadlines throughout the Semester: 25% </li>
-                    <li>Confidential Peer Evaluations: 25% </li>
-                </ul>
-                <p>In addition, the final group deliverable can bump everyone in the group up or down a +/- level. Feedback (including current grades) will be provided mid-semester.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Features Section -->
-        <div class="row">
-            <!-- Staff -->
-            <div class="col-md-4">
-                <h2 class="page-header">Staff</h2>
-                <p> You can contact the course staff at <a href="mailto:cnm190staff@lists.berkeley.edu">cnm190staff@lists.berkeley.edu</a> </p>
-
-                <li><b>Instructor</b></li>
-                <ul>
-                    <li><a href="https://people.eecs.berkeley.edu/~ddgarcia/">Dan Garcia</a></li>
-                </ul>
-                <li><b>Teaching Assistant</b></li>
-                <ul>
-                    <li>Akshata Nagendra</li>
-                </ul>
-				<li><b>Course Readers</b></li>
-				<ul>
-					<li>Ashna Choudhury</li>
-					<li>Beverly Pan</li>
-          <li>Ryan Ong</li>
-          <li>Ali Yassin</li>
-				</ul>
-            </div>
-            <!-- Archives -->
-            <div class="col-md-4">
-                <h2 class="page-header">Archives</h2>
-                    <ul>
-                        <li> <a href="http://cnm190.ghost.io" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2014-Spring 2015</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa12Sp13/index_sp.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2013</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa12Sp13/index_fa.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2012</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa10Sp11/index_sp.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2011</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa10Sp11/index_fa.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2010</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa08Sp09/index_sp.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2009</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa08Sp09/index_fa.shtml" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2008</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa06Sp07/" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Spring 2007</a> </li>
-                        <li> <a href="http://inst.eecs.berkeley.edu/~cs194-8/Fa06Sp07/index_fall.html" target="_blank"><i class="fa fa-chevron-right"></i> CNM190, Fall 2006</a> </li>
-                    </ul>
-
-            </div>
-            <!-- Related Websites -->
-            <div class="col-md-4">
-                <h2 class="page-header">Related Websites</h2>
-                <ul>
-                    <li>
-                        <img src="http://ucbugg.com/static/images/logo.svg" alt="UCBUGG logo" style="width:50px;height:50px;">
-                        <p>
-							UCBUGG (UC Berkeley Undergraduate Graphics Group) is the student-taught class at UC Berkeley which serves as the unoffical prerequisite for this class.
-						</p>
-                        <a href="http://ucbugg.com" target="_blank"> <i class="fa fa-chevron-right"></i>UCBUGG homepage</a>
-                    </li>
-                </ul>
-            </div>
-
-
         </div>
         <!-- /.row -->
 
@@ -329,6 +364,7 @@
 
     </div>
     <!-- /.container -->
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -336,12 +372,22 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- JS, Popper.js, and jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
+
+    <!-- Script to activate AOS -->
+    <!-- <script>
+        AOS.init();
+    </script> -->
 
     <script type="text/javascript">
     $(document).ready(function(){
