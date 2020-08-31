@@ -77,6 +77,14 @@ header.carousel .fill {
     background-size: cover;
 }
 
+.carousel-indicators {
+    text-align: center;
+}
+
+.carousel-caption {
+    text-align: center;
+}
+
 /* 404 Page Styles */
 
 .error-404 {
